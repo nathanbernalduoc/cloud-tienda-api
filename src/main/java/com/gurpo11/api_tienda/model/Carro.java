@@ -1,0 +1,69 @@
+package com.gurpo11.api_tienda.model;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.SequenceGenerator;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "TD_CARRO")
+
+public class Carro {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "carro_seq")
+    @SequenceGenerator(name = "carro_seq", sequenceName = "SEQ_CARRO_ID", allocationSize = 1)
+    @Column(name = "CARRO_ID")
+    private Long carroId;
+    @Column(name = "USUARIO_ID")
+    private Long usuarioId;
+    @Column(name = "PRODUCTO_ID")
+    private Long productoId;
+    @Column(name = "CANTIDAD")
+    private Long cantidad;
+    @Column(name = "REGISTRO_FECHA")
+    private Long registroFecha;
+    @Column(name = "VIGENCiA_FLAG")
+    private int vigenciaFlag;
+    public Long getCarroId() {
+        return carroId;
+    }
+    public void setCarroId(Long carroId) {
+        this.carroId = carroId;
+    }
+    public Long getUsuarioId() {
+        return usuarioId;
+    }
+    public void setUsuarioId(Long usuarioId) {
+        this.usuarioId = usuarioId;
+    }
+    public Long getProductoId() {
+        return productoId;
+    }
+    public void setProductoId(Long productoId) {
+        this.productoId = productoId;
+    }
+    public Long getCantidad() {
+        return cantidad;
+    }
+    public void setCantidad(Long cantidad) {
+        this.cantidad = cantidad;
+    }
+    public Long getRegistroFecha() {
+        return registroFecha;
+    }
+    public void setRegistroFecha(Long registroFecha) {
+        this.registroFecha = registroFecha;
+    }
+    public int getVigenciaFlag() {
+        return vigenciaFlag;
+    }
+    public void setVigenciaFlag(int vigenciaFlag) {
+        this.vigenciaFlag = vigenciaFlag;
+    }
+
+    
+}

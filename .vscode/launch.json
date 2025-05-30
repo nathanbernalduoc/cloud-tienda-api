@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-ApiTiendaApplication<api_tienda>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.gurpo11.api_tienda.ApiTiendaApplication",
+            "projectName": "api_tienda",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
