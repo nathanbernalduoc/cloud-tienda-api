@@ -4,10 +4,12 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.gurpo11.api_tienda.model.Carro;
 import com.gurpo11.api_tienda.repository.CarroRepository;
 
+@Service
 public class CarroServiceImpl implements CarroService {
 
     @Autowired
@@ -21,11 +23,6 @@ public class CarroServiceImpl implements CarroService {
     @Override
     public Optional<Carro> getCarroById(Long id) {
         return carroRepository.findById(id);
-    }
-
-    @Override
-    public List<Carro> getCarroByUsuarioId(Long id) {
-        return carroRepository.getCarroByUsuarioId(id);
     }
 
     @Override

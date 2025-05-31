@@ -7,11 +7,10 @@ import com.gurpo11.api_tienda.model.Carro;
 
 public interface CarroService {
 
-    public List<Carro> getAllCarros();
-    public Optional<Carro> getCarroById(Long id);
-    public List<Carro> getCarroByUsuarioId(Long id);
-    public Carro createCarro(Carro carro);
-    public Carro updateCarro(Long id, Carro carro);
+    List<Carro> getAllCarros();
+    Optional<Carro> getCarroById(Long id);
+    Carro createCarro(Carro carro);
+    Carro updateCarro(Long id, Carro carro);
     void deleteCarro(Long id);
 
 

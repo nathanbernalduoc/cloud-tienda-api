@@ -21,7 +21,7 @@ public class CarroController {
 
     @GetMapping("/carro/{usuarioId}")
     public List<Carro> getCarro(@RequestParam Long usuarioId) {
-        return carroService.getCarroByUsuarioId(usuarioId);
+        return carroService.getAllCarros(); //getCarroByUsuarioId(usuarioId);
     }
 
     @PostMapping("/carro")

@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import com.gurpo11.api_tienda.model.Usuario;
 import com.gurpo11.api_tienda.repository.UsuarioRepository;
 
+@service
 public class UsuarioServiceImpl implements UsuarioService {
 
     @Autowired

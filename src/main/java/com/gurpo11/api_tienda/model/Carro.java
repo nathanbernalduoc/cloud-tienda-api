@@ -28,6 +28,7 @@ public class Carro {
     private Long registroFecha;
     @Column(name = "VIGENCiA_FLAG")
     private int vigenciaFlag;
+
     public Long getCarroId() {
         return carroId;
     }
