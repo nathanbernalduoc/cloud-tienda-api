@@ -1,5 +1,7 @@
 package com.gurpo11.api_tienda.model;
 
+import java.sql.Date;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -25,7 +27,7 @@ public class Carro {
     @Column(name = "CANTIDAD")
     private Long cantidad;
     @Column(name = "REGISTRO_FECHA")
-    private Long registroFecha;
+    private Date registroFecha;
     @Column(name = "VIGENCiA_FLAG")
     private int vigenciaFlag;
 
@@ -53,10 +55,10 @@ public class Carro {
     public void setCantidad(Long cantidad) {
         this.cantidad = cantidad;
     }
-    public Long getRegistroFecha() {
+    public Date getRegistroFecha() {
         return registroFecha;
     }
-    public void setRegistroFecha(Long registroFecha) {
+    public void setRegistroFecha(Date registroFecha) {
         this.registroFecha = registroFecha;
     }
     public int getVigenciaFlag() {

@@ -45,4 +45,10 @@ public class CarroServiceImpl implements CarroService {
         carroRepository.deleteById(id);
     }
 
+    @Override
+    public List<Carro> getCarroByUsuarioId(Long usuarioId) {
+        return carroRepository.getCarroByUsuarioId(usuarioId);
+    }
+
+
 }

@@ -4,11 +4,12 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.gurpo11.api_tienda.model.Usuario;
 import com.gurpo11.api_tienda.repository.UsuarioRepository;
 
-@service
+@Service
 public class UsuarioServiceImpl implements UsuarioService {
 
     @Autowired
