@@ -32,6 +32,14 @@ public class Producto {
     private Long valorCosto;
     @Column(name = "VALOR_VENTA")
     private Long valorVenta;
+    public String getImagenUri() {
+        return imagenUri;
+    }
+    public void setImagenUri(String imagenUri) {
+        this.imagenUri = imagenUri;
+    }
+    @Column(name = "IMAGEN_URI")
+    private String imagenUri;
 
     public Long getProductoId() {
         return productoId;
