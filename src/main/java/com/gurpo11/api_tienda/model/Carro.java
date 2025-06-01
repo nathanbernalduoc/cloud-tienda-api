@@ -67,5 +67,6 @@ public class Carro {
     public void setVigenciaFlag(int vigenciaFlag) {
         this.vigenciaFlag = vigenciaFlag;
     }
+
     
 }
