@@ -21,7 +21,7 @@ public class Carro {
     @Column(name = "CARRO_ID")
     private Long carroId;
     @Column(name = "USUARIO_ID")
-    private Long usuarioId;
+    private String usuarioId;
     @Column(name = "PRODUCTO_ID")
     private Long productoId;
     @Column(name = "CANTIDAD")
@@ -37,10 +37,10 @@ public class Carro {
     public void setCarroId(Long carroId) {
         this.carroId = carroId;
     }
-    public Long getUsuarioId() {
+    public String getUsuarioId() {
         return usuarioId;
     }
-    public void setUsuarioId(Long usuarioId) {
+    public void setUsuarioId(String usuarioId) {
         this.usuarioId = usuarioId;
     }
     public Long getProductoId() {

@@ -20,18 +20,13 @@ public class CarroController {
     private CarroService carroService;
 
     @GetMapping("/carro/{id}")
-    public List<Carro> getCarro(@PathVariable Long id) {
+    public List<Carro> getCarro(@PathVariable String id) {
         return carroService.getCarroByUsuarioId(id);
     }
 
     @PostMapping("/carro")
     public Carro setCarroProducto(@RequestBody Carro carro) {
         return carroService.createCarro(carro);
-    }
-
-    @GetMapping("/carroimg/{id}")
-    public List<Carro> getCarroImg(@PathVariable Long id) {
-        return carroService.getCarroByUsuarioId(id);
     }
 
 }

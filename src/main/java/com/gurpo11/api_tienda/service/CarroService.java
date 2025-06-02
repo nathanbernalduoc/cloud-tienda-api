@@ -13,6 +13,6 @@ public interface CarroService {
     public Carro updateCarro(Long id, Carro carro);
     void deleteCarro(Long id);
 
-    public List<Carro> getCarroByUsuarioId(Long usuarioId);
+    public List<Carro> getCarroByUsuarioId(String usuarioId);
 
 }

@@ -46,7 +46,7 @@ public class CarroServiceImpl implements CarroService {
     }
 
     @Override
-    public List<Carro> getCarroByUsuarioId(Long usuarioId) {
+    public List<Carro> getCarroByUsuarioId(String usuarioId) {
         return carroRepository.getCarroByUsuarioId(usuarioId);
     }
 

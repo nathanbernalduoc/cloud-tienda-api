@@ -9,6 +9,6 @@ import com.gurpo11.api_tienda.model.Carro;
 
 public interface CarroRepository extends JpaRepository<Carro, Long> {
 
-    public List<Carro> getCarroByUsuarioId(Long usuarioId);
+    public List<Carro> getCarroByUsuarioId(String usuarioId);
 
 }
