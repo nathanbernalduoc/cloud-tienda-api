@@ -29,4 +29,9 @@ public class CarroController {
         return carroService.createCarro(carro);
     }
 
+    @GetMapping("/carroimg/{id}")
+    public List<Carro> getCarroImg(@PathVariable Long id) {
+        return carroService.getCarroByUsuarioId(id);
+    }
+
 }
