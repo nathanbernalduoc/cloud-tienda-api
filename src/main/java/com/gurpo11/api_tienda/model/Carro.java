@@ -30,8 +30,8 @@ public class Carro {
     private Date registroFecha;
     @Column(name = "VIGENCiA_FLAG")
     private int vigenciaFlag;
-    @Column(name = "IMAGEN_URI")
-    private int imagenUri;
+    // @Column(name = "IMAGEN_URI")
+    // private int imagenUri;
 
     public Long getCarroId() {
         return carroId;
@@ -69,12 +69,12 @@ public class Carro {
     public void setVigenciaFlag(int vigenciaFlag) {
         this.vigenciaFlag = vigenciaFlag;
     }
-    public int getImagenUri() {
-        return imagenUri;
-    }
-    public void setImagenUri(int imagenUri) {
-        this.imagenUri = imagenUri;
-    }
+    // public int getImagenUri() {
+    //     return imagenUri;
+    // }
+    // public void setImagenUri(int imagenUri) {
+    //     this.imagenUri = imagenUri;
+    // }
 
     
 }
