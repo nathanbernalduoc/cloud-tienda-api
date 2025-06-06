@@ -30,7 +30,15 @@ public class Carro {
     private Date registroFecha;
     @Column(name = "VIGENCiA_FLAG")
     private int vigenciaFlag;
+    @Column(name = "TICKET_ID")
+    private int ticketId;
 
+    public int getTicketId() {
+        return ticketId;
+    }
+    public void setTicketId(int ticketId) {
+        this.ticketId = ticketId;
+    }
     public Long getCarroId() {
         return carroId;
     }
