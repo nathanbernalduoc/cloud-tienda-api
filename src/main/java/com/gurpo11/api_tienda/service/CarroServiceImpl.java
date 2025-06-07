@@ -50,5 +50,4 @@ public class CarroServiceImpl implements CarroService {
         return carroRepository.getCarroByUsuarioId(usuarioId);
     }
 
-
 }

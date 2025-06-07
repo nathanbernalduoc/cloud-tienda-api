@@ -13,7 +13,7 @@ import jakarta.persistence.Table;
 @Entity
 @Table(name = "TD_TICKET")
 
-public class TIcket {
+public class Ticket {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "carro_seq")
@@ -21,20 +21,29 @@ public class TIcket {
     @Column(name = "TICKET_ID")
     private Long ticketId;
     @Column(name = "TOTAL")
-    private String total;
+    private Long total;
     @Column(name = "REGISTRO_FECHA")
     private Date registroFecha;
-    
+
+    public Ticket() {
+    }
+
+    public Ticket(Long ticketId, Long total, Date registroFecha) {
+        this.ticketId = ticketId;
+        this.total = total;
+        this.registroFecha = registroFecha;
+    }
+
     public Long getTicketId() {
         return ticketId;
     }
     public void setTicketId(Long ticketId) {
         this.ticketId = ticketId;
     }
-    public String getTotal() {
+    public Long getTotal() {
         return total;
     }
-    public void setTotal(String total) {
+    public void setTotal(Long total) {
         this.total = total;
     }
     public Date getRegistroFecha() {

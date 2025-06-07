@@ -22,7 +22,7 @@ public class ProductoServiceImpl implements ProductoService {
 
     @Override
     public Optional<Producto> getProductoById(Long id) {
-        return productoRepository.findById(id);
+        return productoRepository.getProductoByProductoId(id);
     }
 
     @Override
