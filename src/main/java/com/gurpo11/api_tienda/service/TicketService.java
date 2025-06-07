@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Optional;
 
 import com.gurpo11.api_tienda.model.Ticket;
+import com.gurpo11.api_tienda.model.TicketOut;
 
 public interface TicketService {
 

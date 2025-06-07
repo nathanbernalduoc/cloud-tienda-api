@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.gurpo11.api_tienda.model.Ticket;
+import com.gurpo11.api_tienda.model.TicketOut;
 import com.gurpo11.api_tienda.repository.TicketRepository;
 
 @Service
